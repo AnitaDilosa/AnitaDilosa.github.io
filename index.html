@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Perpustakaan Modern</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Perpustakaan Anita - Desain Baru</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-left">
-        <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Logo" class="logo"/>
-        <span class="brand">PerpustakaanKu</span>
-      </div>
-      <ul class="nav-menu">
-        <li><a href="#"><i class="fa-solid fa-house"></i> Beranda</a></li>
-        <li><a href="#"><i class="fa-solid fa-info-circle"></i> Tentang</a></li>
-        <li><a href="#"><i class="fa-solid fa-envelope"></i> Kontak</a></li>
-        <li><a href="#"><i class="fa-solid fa-ellipsis-h"></i> Lainnya</a></li>
-      </ul>
-      <button class="theme-toggle"><i class="fa-solid fa-gear"></i></button>
+    <nav class="navbar">
+        <div class="brand"><i class="fa-solid fa-book-open-reader"></i> Perpustakaan Anita</div>
+        <div class="nav-links">
+            <a href="#">Beranda</a>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kontak</a>
+            <a href="#">Tabel</a>
+        </div>
+    </nav>
+    <header class="header">
+        <h1>Selamat Datang di Perpustakaan Anita</h1>
+        <p>Temukan hal menarik di website kami.</p>
+        <div class="btn-group">
+            <button class="btn"><i class="fa-solid fa-search"></i> Buku</button>
+            <button class="btn"><i class="fa-solid fa-calendar-days"></i> Event</button>
+        </div>
+    </header>
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Website ini menggunakan cookie untuk meningkatkan pengalaman pengguna. Pilih setuju atau tolak cookie kami.</p>
+        <div class="cookie-btns">
+            <button class="accept" onclick="acceptCookies()">Terima Semua Cookies</button>
+            <button class="decline" onclick="declineCookies()">Tolak</button>
+        </div>
     </div>
-  </nav>
-  <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Selamat Datang di <span class="highlight">Perpustakaan</span></h1>
-      <p>
-        Temukan ribuan koleksi buku, ikuti event menarik, dan jelajahi dunia pengetahuan tanpa batas!
-      </p>
-      <div class="hero-buttons">
-        <a href="#" class="hero-btn"><i class="fa-solid fa-arrow-right-to-bracket"></i> Perpustakaan</a>
-        <a href="#" class="hero-btn"><i class="fa-solid fa-book"></i> Koleksi Buku</a>
-        <a href="#" class="hero-btn"><i class="fa-solid fa-calendar-days"></i> Event & Kegiatan</a>
-      </div>
-    </div>
-  </section>
+        <script>
+        function acceptCookies() {
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+        function declineCookies() {
+            document.getElementById('cookieBanner').style.display = 'none';
+        }
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark');
+        }
+    </script>
 </body>
 </html>
