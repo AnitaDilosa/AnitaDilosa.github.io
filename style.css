@@ -214,3 +214,89 @@ body {
         border-radius: 0 0 30px 30px;
     }
 }
+
+/* Responsive untuk layar HP (max-width: 600px) */
+@media (max-width: 600px) {
+  /* Navbar */
+  .navbar, nav, .navbar-container {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 10px 16px !important;
+  }
+  .navbar-logo img, .logo img {
+    width: 36px !important;
+    height: auto !important;
+  }
+  .navbar-logo, .logo {
+    font-size: 1.2em !important;
+  }
+  .navbar-menu, .menu, nav ul {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  .navbar-menu li, nav ul li {
+    width: 100% !important;
+    margin: 0 !important;
+    text-align: left !important;
+    padding: 10px 0 !important;
+  }
+  .navbar-menu li a, nav ul li a {
+    display: block !important;
+    width: 100% !important;
+    padding: 10px 0 !important;
+  }
+  .navbar-toggle, .menu-toggle {
+    display: block !important;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 1001;
+  }
+
+  /* Hero Section */
+  .hero, .main-banner, .welcome-section {
+    padding: 40px 10px 30px 10px !important;
+    text-align: center !important;
+    background-position: center !important;
+    min-height: 320px !important;
+  }
+  .hero-title, .main-title, h1 {
+    font-size: 1.5em !important;
+    line-height: 1.2 !important;
+    margin-bottom: 16px !important;
+  }
+  .hero-subtitle, .main-subtitle, p {
+    font-size: 1em !important;
+    margin-bottom: 18px !important;
+  }
+
+  /* Tombol aksi utama */
+  .hero-buttons, .main-actions, .cta-buttons {
+    flex-direction: column !important;
+    gap: 10px !important;
+    align-items: center !important;
+  }
+  .hero-buttons button, .main-actions button,
+  .hero-buttons a, .main-actions a,
+  .cta-buttons button, .cta-buttons a {
+    width: 90% !important;
+    font-size: 1em !important;
+    padding: 12px 0 !important;
+    margin: 0 auto !important;
+    border-radius: 8px !important;
+  }
+
+  /* Background dan konten bawah hero */
+  .content-section, .main-content {
+    padding: 16px 8px !important;
+  }
+
+  /* Icon setting mengambang */
+  .settings-icon, .floating-settings {
+    top: 12px !important;
+    right: 12px !important;
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
