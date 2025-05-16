@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <head>
+    <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cookie Bubble Notification</title>
@@ -28,7 +27,6 @@
       transition: opacity 0.4s ease, transform 0.4s ease;
       z-index: 9999;
     }
-
     /* Show bubble */
     .cookie-bubble.show {
       opacity: 1;
@@ -120,201 +118,44 @@
 
 </body>
 </html>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Library</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    /* Reset & base */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.5;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    ul {
-      list-style: none;
-    }
-
-    /* Navbar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #fff;
-      padding: 10px 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .navbar-left {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-    }
-    .logo {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-    }
-    .brand {
-      font-weight: 700;
-      font-size: 1.3rem;
-      color: #007bff;
-    }
-    .nav-menu {
-      display: flex;
-      gap: 20px;
-      margin-left: 20px;
-    }
-    .nav-menu li a {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-weight: 600;
-      color: #333;
-      padding: 6px 8px;
-      border-radius: 6px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    .nav-menu li a:hover {
-      background-color: #007bff;
-      color: white;
-    }
-
-    /* Navbar right (theme toggle) */
-    .navbar-right button {
-      background: none;
-      border: none;
-      font-size: 1.3rem;
-      cursor: pointer;
-      color: #333;
-      transition: color 0.3s;
-    }
-    .navbar-right button:hover {
-      color: #007bff;
-    }
-
-    /* Hero Section */
-    .hero {
-      position: relative;
-      background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-      height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 20px;
-      text-align: center;
-      color: white;
-    }
-    .hero-overlay {
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 1;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 600px;
-    }
-    .hero-content h1 {
-      font-size: 2.5rem;
-      margin-bottom: 12px;
-      font-weight: 700;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.7);
-    }
-    .hero-content p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-      text-shadow: 0 1px 4px rgba(0,0,0,0.6);
-    }
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-    }
-    .hero-btn {
-      background-color: #007bff;
-      color: white;
-      padding: 10px 18px;
-      border-radius: 30px;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.3s;
-      white-space: nowrap;
-    }
-    .hero-btn:hover {
-      background-color: #0056b3;
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .nav-menu {
-        display: none; /* Sembunyikan menu di mobile, bisa ditambah hamburger menu */
-      }
-      .hero-content h1 {
-        font-size: 1.8rem;
-      }
-      .hero-content p {
-        font-size: 1rem;
-      }
-      .hero-buttons {
-        flex-direction: column;
-        gap: 10px;
-      }
-      .hero-btn {
-        width: 100%;
-        justify-content: center;
-      }
-    }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="https://img.lovepik.com/free-png/20211213/lovepik-books-illustration-png-png-image_401549319_wh1200.png" alt="Logo" class="logo">
+            <span class="brand">Library</span>
+            <ul class="nav-menu">
+               <li><a href="" target="_blank"><i class="fa fa-home"></i> Beranda</a></li>
+                <li><a href="About Me.html" target="_blank"><i class="fa fa-info-circle"></i> Tentang</a></li>
+                <li><a href="Contact Us.html" target="_blank"><i class="fa fa-envelope"></i> Kontak</a></li>
+                <li><a href="#" target="_blank"><i class="fa fa-bars"></i> Lainnya</a></li>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-left">
-      <img src="https://img.lovepik.com/free-png/20211213/lovepik-books-illustration-png-png-image_401549319_wh1200.png" alt="Logo" class="logo" />
-      <span class="brand">Library</span>
-      <ul class="nav-menu">
-        <li><a href="#" target="_blank"><i class="fa fa-home"></i> Beranda</a></li>
-        <li><a href="About Me.html" target="_blank"><i class="fa fa-info-circle"></i> Tentang</a></li>
-        <li><a href="Contact Us.html" target="_blank"><i class="fa fa-envelope"></i> Kontak</a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-bars"></i> Lainnya</a></li>
-      </ul>
-    </div>
-    <div class="navbar-right">
-      <button class="theme-toggle" aria-label="Toggle theme"><i class="fa fa-sun"></i></button>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Selamat Datang di Perpustakaan</h1>
-      <p>Jelajahi koleksi yang beragam, temukan acara mendatang, dan selami dunia pengetahuan.</p>
-      <div class="hero-buttons">
-        <a href="#" class="hero-btn" target="_blank"><i class="fa fa-external-link-alt"></i> Kunjungi Perpustakaan</a>
-        <a href="#" class="hero-btn" target="_blank"><i class="fa fa-book"></i> Lihat Buku</a>
-        <a href="Event.html" class="hero-btn" target="_blank"><i class="fa fa-calendar-alt"></i> Lihat Event</a>
-      </div>
-    </div>
-  </header>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <button class="theme-toggle"><i class="fa fa-sun"></i></button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Selamat Datang di Perpustakaan</h1>
+            <p>Jelajahi koleksi yang beragam, temukan acara mendatang, dan selami dunia pengetahuan.</p>
+            <div class="hero-buttons">
+                <a href="#" class="hero-btn"><i class="fa fa-external-link-alt" target="_blank"></i> Kunjungi Perpustakaan</a>
+                <a href="#" class="hero-btn"><i class="fa fa-book" target="_blank"></i> Lihat Buku</a>
+                <a href="Event.html" class="hero-btn" target="_blank"><i class="fa fa-calendar-alt"></i> Lihat Event</a>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
