@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 <html lang="id">
     <head>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Selamat Datang Bubble</title>
+  <style>
+    /* Styling bubble */
+    .welcome-bubble {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #17a2b8;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 12px rgba(23, 162, 184, 0.6);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      z-index: 9999;
+      user-select: none;
+    }
+    .welcome-bubble.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="welcome-bubble" id="welcomeBubble">Selamat Datang</div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const bubble = document.getElementById('welcomeBubble');
+      bubble.classList.add('show');
+
+      // Hilangkan bubble setelah 3 detik
+      setTimeout(() => {
+        bubble.classList.remove('show');
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cookie Bubble Notification</title>
