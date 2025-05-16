@@ -218,85 +218,74 @@ body {
 /* Responsive untuk layar HP (max-width: 600px) */
 @media (max-width: 600px) {
   /* Navbar */
-  .navbar, nav, .navbar-container {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    padding: 10px 16px !important;
+  .navbar {
+    padding: 0 16px;
+    height: 60px;
+    border-radius: 0 0 20px 20px;
   }
-  .navbar-logo img, .logo img {
-    width: 36px !important;
-    height: auto !important;
+  .navbar-left {
+    gap: 10px;
   }
-  .navbar-logo, .logo {
-    font-size: 1.2em !important;
+  .logo {
+    height: 32px;
+    filter: drop-shadow(0 0 1.5px #5bc0be);
   }
-  .navbar-menu, .menu, nav ul {
-    width: 100% !important;
-    flex-direction: column !important;
-    gap: 0 !important;
+  .brand {
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
   }
-  .navbar-menu li, nav ul li {
-    width: 100% !important;
-    margin: 0 !important;
-    text-align: left !important;
-    padding: 10px 0 !important;
+  .nav-menu {
+    gap: 12px;
+    flex-wrap: wrap;
   }
-  .navbar-menu li a, nav ul li a {
-    display: block !important;
-    width: 100% !important;
-    padding: 10px 0 !important;
-  }
-  .navbar-toggle, .menu-toggle {
-    display: block !important;
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    z-index: 1001;
+  .nav-menu li a {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    border-radius: 10px;
   }
 
   /* Hero Section */
-  .hero, .main-banner, .welcome-section {
-    padding: 40px 10px 30px 10px !important;
-    text-align: center !important;
-    background-position: center !important;
-    min-height: 320px !important;
+  .hero {
+    height: 320px;
+    border-radius: 0 0 30px 30px;
+    margin-top: 60px; /* sesuaikan dengan navbar height */
   }
-  .hero-title, .main-title, h1 {
-    font-size: 1.5em !important;
-    line-height: 1.2 !important;
-    margin-bottom: 16px !important;
+  .hero-overlay {
+    border-radius: 0 0 30px 30px;
   }
-  .hero-subtitle, .main-subtitle, p {
-    font-size: 1em !important;
-    margin-bottom: 18px !important;
+  .hero-content {
+    max-width: 90%;
+    padding: 0 12px;
   }
-
-  /* Tombol aksi utama */
-  .hero-buttons, .main-actions, .cta-buttons {
-    flex-direction: column !important;
-    gap: 10px !important;
-    align-items: center !important;
+  .hero-content h1 {
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 6px rgba(0,175,185,0.8);
+    margin-bottom: 16px;
+    letter-spacing: 1.2px;
   }
-  .hero-buttons button, .main-actions button,
-  .hero-buttons a, .main-actions a,
-  .cta-buttons button, .cta-buttons a {
-    width: 90% !important;
-    font-size: 1em !important;
-    padding: 12px 0 !important;
-    margin: 0 auto !important;
-    border-radius: 8px !important;
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    line-height: 1.4;
   }
-
-  /* Background dan konten bawah hero */
-  .content-section, .main-content {
-    padding: 16px 8px !important;
+  .hero-buttons {
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
   }
-
-  /* Icon setting mengambang */
-  .settings-icon, .floating-settings {
-    top: 12px !important;
-    right: 12px !important;
-    width: 36px !important;
-    height: 36px !important;
+  .hero-btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0,175,185,0.7);
+  }
+  .hero-btn:hover {
+    box-shadow: 0 8px 25px rgba(0,175,185,0.9);
+    transform: translateY(-3px);
+  }
+  .hero-btn i {
+    font-size: 1.1rem;
   }
 }
