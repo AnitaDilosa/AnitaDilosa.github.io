@@ -203,36 +203,3 @@ body {
         padding: 12px 0;
     }
 }
-
-  <title>Contact Form Stylish</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <form
-    class="contact-form"
-    action="https://formspree.io/f/xwpoykov"
-    method="POST"
-  >
-    <h2>Contact Us</h2>
-
-    <div class="input-group">
-      <input type="email" name="email" required placeholder="Your email address" />
-      <!-- Email icon SVG -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-      </svg>
-    </div>
-
-    <div class="input-group">
-      <textarea name="message" required placeholder="Your message"></textarea>
-      <!-- Message icon SVG -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20 2H4c-1.1 0-2 .9-2 2v16l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
-      </svg>
-    </div>
-
-    <button type="submit">Send Message</button>
-  </form>
-</body>
-</html>
