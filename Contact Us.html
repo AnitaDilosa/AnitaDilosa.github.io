@@ -1,158 +1,37 @@
-<!-- Stylish & Unique Contact Form -->
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Form Stylish</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <form
+    class="contact-form"
+    action="https://formspree.io/f/xwpoykov"
+    method="POST"
+  >
+    <h2>Contact Us</h2>
 
-  body {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+    <div class="input-group">
+      <input type="email" name="email" required placeholder="Your email address" />
+      <!-- Email icon SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </div>
 
-  .contact-form {
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    width: 380px;
-    padding: 40px 35px;
-    position: relative;
-    overflow: hidden;
-  }
+    <div class="input-group">
+      <textarea name="message" required placeholder="Your message"></textarea>
+      <!-- Message icon SVG -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M20 2H4c-1.1 0-2 .9-2 2v16l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+      </svg>
+    </div>
 
-  /* Animated gradient border */
-  .contact-form::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(60deg, #ff5858, #f09819, #ff5858, #f09819);
-    background-size: 400% 400%;
-    animation: gradientMove 8s linear infinite;
-    filter: blur(30px);
-    z-index: 0;
-  }
-
-  @keyframes gradientMove {
-    0% {background-position: 0% 50%;}
-    50% {background-position: 100% 50%;}
-    100% {background-position: 0% 50%;}
-  }
-
-  .contact-form * {
-    position: relative;
-    z-index: 1;
-  }
-
-  .contact-form h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 600;
-    color: #333;
-    letter-spacing: 1.2px;
-  }
-
-  .input-group {
-    margin-bottom: 25px;
-    position: relative;
-  }
-
-  /* Icon inside input */
-  .input-group svg {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    fill: #888;
-    width: 20px;
-    height: 20px;
-    transition: fill 0.3s;
-  }
-
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 14px 15px 14px 45px;
-    border-radius: 12px;
-    border: 2px solid #ddd;
-    font-size: 1em;
-    resize: none;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  input[type="email"]:focus,
-  textarea:focus {
-    border-color: #ff5858;
-    box-shadow: 0 0 8px rgba(255, 88, 88, 0.5);
-    outline: none;
-  }
-
-  .input-group input[type="email"]:focus + svg,
-  .input-group textarea:focus + svg {
-    fill: #ff5858;
-  }
-
-  textarea {
-    min-height: 100px;
-  }
-
-  button[type="submit"] {
-    width: 100%;
-    padding: 15px;
-    background: #ff5858;
-    border: none;
-    border-radius: 12px;
-    color: white;
-    font-weight: 600;
-    font-size: 1.1em;
-    cursor: pointer;
-    box-shadow: 0 8px 15px rgba(255, 88, 88, 0.4);
-    transition: background 0.3s, box-shadow 0.3s;
-  }
-
-  button[type="submit"]:hover {
-    background: #f09819;
-    box-shadow: 0 10px 20px rgba(240, 152, 25, 0.6);
-  }
-
-  /* Responsive */
-  @media (max-width: 420px) {
-    .contact-form {
-      width: 90%;
-      padding: 30px 20px;
-    }
-  }
-</style>
-
-<form
-  class="contact-form"
-  action="https://formspree.io/f/xwpoykov"
-  method="POST"
->
-  <h2>Contact Us</h2>
-
-  <div class="input-group">
-    <input type="email" name="email" required placeholder="Your email address" />
-    <!-- Email icon SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-    </svg>
-  </div>
-
-  <div class="input-group">
-    <textarea name="message" required placeholder="Your message"></textarea>
-    <!-- Message icon SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M20 2H4c-1.1 0-2 .9-2 2v16l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
-    </svg>
-  </div>
-
-  <form id="myForm" action="https://formspree.io/f/xwpoykov" method="POST" target="_blank">
-  <button type="submit" target="_blank">Send Message</button>
-</form>
-</form>
+    <button type="submit">Send Message</button>
+  </form>
+</body>
+</html>
