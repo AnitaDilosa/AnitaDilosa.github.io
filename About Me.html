@@ -2,89 +2,108 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>Biodata Diri - Anita Dilosa Br. Ginting</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
-
-        .table-container {
-            max-width: 600px;
-            margin: auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
+        .container {
+            max-width: 400px;
+            background: #fff;
+            margin: 50px auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            padding: 32px 24px;
             text-align: center;
+        }
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #6fcf97;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 1.7em;
+            margin-bottom: 4px;
             color: #333;
         }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .subtitle {
+            color: #6fcf97;
+            font-weight: 700;
+            margin-bottom: 2px;
         }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
+        .univ {
+            color: #888;
+            font-size: 0.95em;
+            margin-bottom: 16px;
+        }
+        .biodata-table {
+            width: 100%;
+            margin: 16px 0 24px 0;
+            border-collapse: separate;
+            border-spacing: 0 8px;
+        }
+        .biodata-table td {
+            padding: 10px 12px;
+            background: #f7f9fa;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+        .biodata-table td:first-child {
+            color: #6fcf97;
+            font-weight: bold;
+            width: 40%;
             text-align: left;
         }
-
-        th {
-            background-color: #4CAF50;
-            color: white;
+        .links {
+            margin-top: 18px;
         }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
+        .links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px 18px;
+            background: #6fcf97;
+            color: #fff;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
         }
-
-        tr:hover {
-            background-color: #ddd;
+        .links a:hover {
+            background: #43b67e;
         }
     </style>
 </head>
 <body>
-    <div class="table-container">
-        <h1>Biodata Diri</h1>
-        <table>
+    <div class="container">
+        <img src="https://ui-avatars.com/api/?name=Anita+Dilosa&background=6fcf97&color=fff&size=128" alt="Foto Profil" class="profile-img">
+        <h1>Anita Dilosa Br. Ginting</h1>
+        <div class="subtitle">Mahasiswa Perpustakaan dan Sains Informasi</div>
+        <div class="univ">Universitas Sumatera Utara</div>
+        <table class="biodata-table">
             <tr>
-                <th>Informasi</th>
-                <th>Detail</th>
-            </tr>
-            <tr>
-                <td>Nama</td>
-                <td>Anita Dilosa Br. Ginting</td>
-            </tr>
-            <tr>
-                <td>NIM</td>
+                <td>📄 NIM</td>
                 <td>220709006</td>
             </tr>
             <tr>
-                <td>Program Studi</td>
-                <td>Perpustakaan dan Sains Informasi</td>
-            </tr>
-            <tr>
-                <td>Fakultas</td>
+                <td>🎓 Fakultas</td>
                 <td>Ilmu Budaya</td>
             </tr>
             <tr>
-                <td>Universitas</td>
+                <td>🏫 Universitas</td>
                 <td>Universitas Sumatera Utara</td>
             </tr>
         </table>
-    <div class="links">
-        <h3>Halaman Lain</h3>
-        <li><a href="index.html"target="_blank">Home</a></li>
-        <li><a href="Contact Us.html"target="_blank">Contact Us</a></li>
-    <div/>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
 </body>
 </html>
