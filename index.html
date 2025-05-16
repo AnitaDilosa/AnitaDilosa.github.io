@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
     <head>
-<!DOCTYPE html>
-<html lang="id">
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Selamat Datang Bubble</title>
@@ -209,5 +206,100 @@
             </div>
         </div>
     </header>
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halaman dengan Komentar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 15px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+    #commentBox {
+      width: 100%;
+      min-height: 80px;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+    #submitBtn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    #submitBtn:hover {
+      background-color: #0056b3;
+    }
+    #commentsList {
+      margin-top: 30px;
+    }
+    .comment {
+      background: white;
+      padding: 12px 16px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+      word-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Berikan Komentar Anda</h2>
+
+  <textarea id="commentBox" placeholder="Tulis komentar Anda di sini..."></textarea>
+  <button id="submitBtn">Kirim Komentar</button>
+
+  <div id="commentsList"></div>
+
+  <script>
+    const submitBtn = document.getElementById('submitBtn');
+    const commentBox = document.getElementById('commentBox');
+    const commentsList = document.getElementById('commentsList');
+
+    submitBtn.addEventListener('click', () => {
+      const commentText = commentBox.value.trim();
+      if (commentText === '') {
+        alert('Komentar tidak boleh kosong!');
+        return;
+      }
+
+      // Membuat elemen komentar baru
+      const commentDiv = document.createElement('div');
+      commentDiv.classList.add('comment');
+      commentDiv.textContent = commentText;
+
+      // Tambahkan komentar ke daftar komentar
+      commentsList.prepend(commentDiv);
+
+      // Kosongkan textarea
+      commentBox.value = '';
+    });
+  </script>
+
+</body>
+</html>
+
 </body>
 </html>
