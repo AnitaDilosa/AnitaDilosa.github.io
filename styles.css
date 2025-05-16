@@ -60,7 +60,7 @@ body {
     position: relative;
     box-shadow: inset 0 0 0 1000px rgba(40, 53, 147, 0.6);
     
-.btn 
+.btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
