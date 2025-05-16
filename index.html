@@ -264,42 +264,5 @@
     }
   </style>
 </head>
-<body>
-
-  <h2>Berikan Komentar Anda</h2>
-
-  <textarea id="commentBox" placeholder="Tulis komentar Anda di sini..."></textarea>
-  <button id="submitBtn">Kirim Komentar</button>
-
-  <div id="commentsList"></div>
-
-  <script>
-    const submitBtn = document.getElementById('submitBtn');
-    const commentBox = document.getElementById('commentBox');
-    const commentsList = document.getElementById('commentsList');
-
-    submitBtn.addEventListener('click', () => {
-      const commentText = commentBox.value.trim();
-      if (commentText === '') {
-        alert('Komentar tidak boleh kosong!');
-        return;
-      }
-
-      // Membuat elemen komentar baru
-      const commentDiv = document.createElement('div');
-      commentDiv.classList.add('comment');
-      commentDiv.textContent = commentText;
-
-      // Tambahkan komentar ke daftar komentar
-      commentsList.prepend(commentDiv);
-
-      // Kosongkan textarea
-      commentBox.value = '';
-    });
-  </script>
-
-</body>
-</html>
-
 </body>
 </html>
