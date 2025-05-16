@@ -3,101 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anita's Library</title>
-    <style>
-        body {
-            background-color: lightblue;
-            text-align: center; /* Center text in body */
-            font-family: 'Arial', sans-serif; /* Change body font */
-        }
-        
-        h1 {
-            color: white;
-            background-color: DodgerBlue; /* Background color for header */
-            padding: 10px; /* Padding for better appearance */
-            font-family: 'Georgia', serif; /* Change font for h1 */
-        }
-
-        h2 {
-            font-family: 'Verdana', sans-serif; /* Change font for h2 */
-            color: #333; /* Color for h2 */
-        }
-
-        p {
-            font-family: 'Tahoma', sans-serif; /* Change font for paragraphs */
-            font-size: 20px;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            display: inline-block; /* Center the navigation bar */
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #04AA6D;
-        }
-
-        .footer {
-            background-color: #3b5998;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            width: 100%;
-            position: relative;
-        }
-        
-        img {
-            display: block; /* Center image */
-            margin-left: auto; 
-            margin-right: auto; 
-        }
-    </style>
+    <title>Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
-        alert("Selamat datang di website kami!");
-    </script>
-
-    <h1>Selamat Datang</h1>
-    
-    <h2>TENTANG SAYA</h2>
-    <p>Terima kasih telah mengunjungi halaman saya.</p>
-    <p>Saya berharap Anda menemukan informasi yang berguna dan menarik di sini.</p>
-    <p>Saya membuat website ini untuk belajar.</p>
-    
-    <a href="https://library.usu.ac.id" target="_blank">Perpustakaan USU</a>
-
-    <h2>Halaman lain</h2>
-    <ul>
-        <li><a href="About Me.html" target="_blank">About Me</a></li>
-        <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
-        <li><a href="Event.html"target="_blank">Event</a></li>
-    </ul>
-
-    <img src="https://i.pinimg.com/originals/64/90/76/649076452f120c19bbf5118ebb4eea31.gif" alt="Gambar Bergerak">
-
-    <div class="footer">
-        &copy; Perpustakaan Anita Dilosa
-    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="https://img.lovepik.com/free-png/20211213/lovepik-books-illustration-png-png-image_401549319_wh1200.png" alt="Logo" class="logo">
+            <span class="brand">Library</span>
+            <ul class="nav-menu">
+                <li><a href=""><i class="fa fa-home"></i> Beranda</a></li>
+                <li><a href="About Me.html"><i class="fa fa-info-circle"></i> Tentang</a></li>
+                <li><a href="Contact Us.html"><i class="fa fa-envelope"></i> Kontak</a></li>
+                <li><a href="#"><i class="fa fa-bars"></i> Lainnya</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <button class="theme-toggle"><i class="fa fa-sun"></i></button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Selamat Datang di Perpustakaan</h1>
+            <p>Jelajahi koleksi yang beragam, temukan acara mendatang, dan selami dunia pengetahuan.</p>
+            <div class="hero-buttons">
+                <a href="#" class="hero-btn"><i class="fa fa-external-link-alt"></i> Kunjungi Perpustakaan</a>
+                <a href="#" class="hero-btn"><i class="fa fa-book"></i> Lihat Buku</a>
+                <a href="Event.html" class="hero-btn"><i class="fa fa-calendar-alt"></i> Lihat Event</a>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
